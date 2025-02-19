@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styling */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Section styling */
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 8px 0;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+  </style>>
+</head>
+<body>
+  <header>
+    <h1>About Us</h1>
+  </header>
+
+  <section class="intro">
+    <h2>Welcome to Our Website!</h2>
+    <p>We are a passionate team dedicated to delivering high-quality web solutions. Our mission is to provide exceptional services that help businesses succeed online.</p>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Web Design</li>
+      <li>Web Development</li>
+      <li>SEO Optimization</li>
+      <li>Content Creation</li>
+    </ul>
+  </section>
+
+  <section class="more-info">
+    <h2>Learn More About Us</h2>
+    <p id="extra-info" style="display: none;">We have been in the industry for over 10 years, working with a diverse range of clients to create custom solutions that exceed expectations. Our team is committed to continuous learning and staying up-to-date with the latest trends in web technologies.</p>
+    <button onclick="showMoreInfo()">Show More Info</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Our Company. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showMoreInfo() {
+  // Get the element with the ID 'extra-info'
+  const extraInfoElement = document.getElementById('extra-info');
+
+  // Toggle the display style between 'none' and 'block'
+  if (extraInfoElement.style.display === 'none') {
+    extraInfoElement.style.display = 'block';
+  } else {
+    extraInfoElement.style.display = 'none';
+  }
+}
+
+  </script>
+</body>
+</html>
