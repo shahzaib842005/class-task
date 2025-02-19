@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer Example</title>
+ <style>
+    /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 0;
+  position: relative;
+}
+
+.footer-content {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  width: 30%;
+}
+
+.footer-links ul {
+  list-style-type: none;
+}
+
+.footer-links ul li {
+  margin: 10px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-links a:hover {
+  color: #4CAF50;
+}
+
+.footer-message {
+  width: 30%;
+  text-align: center;
+}
+
+.footer-message button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-message button:hover {
+  background-color: #45a049;
+}
+
+.footer-info {
+  width: 30%;
+  text-align: right;
+}
+
+.footer-info p {
+  font-size: 14px;
+}
+
+.footer-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  color: #4CAF50;
+}
+
+ </style>
+</head>
+<body>
+
+  <!-- Main content of the page (You can add your content here) -->
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-message">
+        <button onclick="showMessage()">Show Special Message</button>
+        <p id="specialMessage" style="display: none;">Thank you for visiting our website!</p>
+      </div>
+
+      <div class="footer-info">
+        <p>&copy; 2025 My Website. All rights reserved.</p>
+        <p>Follow us on:
+          <a href="https://facebook.com" target="_blank">Facebook</a> |
+          <a href="https://twitter.com" target="_blank">Twitter</a> |
+          <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function showMessage() {
+  // Get the element with the ID 'specialMessage'
+  const specialMessageElement = document.getElementById('specialMessage');
+
+  // Toggle the visibility of the special message
+  if (specialMessageElement.style.display === 'none') {
+    specialMessageElement.style.display = 'block';
+  } else {
+    specialMessageElement.style.display = 'none';
+  }
+}
+
+  </script>
+</body>
+</html>
